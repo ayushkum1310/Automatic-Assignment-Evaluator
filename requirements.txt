@@ -6,4 +6,6 @@ matplotlib
 langchain_google_genai
 langchain_core
 Flask
+pandas
+pillow
 #-e .

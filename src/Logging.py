@@ -16,5 +16,5 @@ logging.basicConfig(
 )
 
 
-if __name__=='__main__':
-    logging.info('Logging Has stared "Om Gan GAnpate Namh"')
+# if __name__=='__main__':
+#     logging.info('Logging Has stared "Om Gan GAnpate Namh"')
