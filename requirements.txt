@@ -1,0 +1,9 @@
+python-dotenv
+pdf2image
+google-generativeai
+ipython
+matplotlib
+langchain_google_genai
+langchain_core
+Flask
+#-e .
