@@ -7,8 +7,9 @@ __pycache__/
 *.so
 
 # Distribution / packaging
-ayush.pdf
-a.pdf
+*.pdf
+
+
 artifacts/
 .Python
 build/
