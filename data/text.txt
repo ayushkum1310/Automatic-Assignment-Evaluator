@@ -1,0 +1,66 @@
+## February 8, 2020
+
+**Ans 1:** It is the process of extracting graphical data within the platform, a wide range of visualisation and KPI for any visualisation uncover the data better.
+
+**Ans 2:** Regression 
+> - Predict continuous outcome
+> - Supervised
+> - Algo - linear reg., Polynomial reg.
+> - eg:- Sales forecasting, stock price
+
+## February 9, 2020
+
+**Ex. Ans 3:** Boosting is a technique that classifier from classifier. It is done by using weak model. 
+
+**Clustering**
+
+1. Group similar type of data.
+2. Unsupervised
+3. Algo - k-means, DBscan
+
+> - eg: Customer segmentation anomaly detection
+
+... an ensemble modeling attempts to build a strong .. the number of weak ... one by building a model by ..dels in series.
+
+## February 10, 2020
+
+Firstly a model is built from training data. Then the second model is build to correct the errors present in the first model.
+
+[Drawing with input, +d, output labels]
+
+... is updated ..nd step
+
+**Ans 4:** Spark helps in data a distributed computing for processing large and efficiently. 
+
+Speed: Sparks in-memory fast data querying.
+
+Scalability = Can scale from 1 to thousands of machines to handle datasets of 
+
+Rich API's: Spark provides language ..ula / Java, Python, R) .. exploration by providing frameworks that allow .. volumes of data 
+
+.. try processing allows for .. and analyzing ..haling 
+
+..m a single machine .. me allowing it to .. viktvally any size. 
+
+..ies in multiple ..ula / Java, Python, R) .. explosion.
+
+## February 11, 2020
+
+**Ans 5:** 
+
+**Multiclass**
+> - Single class per instance
+> - Classifying images: cats, dogs or birds 
+
+> - evaluation metrics: Accuracy, precision, recall, F1-score
+
+**Multilabel**
+> - multiple class per instance
+> - tagging a document with multiple topic or categories
+> - Hamming Loss/precision
+
+**Types of classification**
+> - Binary classification
+> - Multiclass classification
+> - multilabel classification
+

@@ -4,6 +4,7 @@ from src.Logging import logging
 from src.exception import CustomException
 from src.image_preprocessing import DataTransformationConfig
 from src.image_preprocessing import DataTransformation
+from src.text_extraction import TextExtractor,TextExtractorConfig
 from src.utils import save_images,save_questions
 from dataclasses import dataclass
 from pdf2image import convert_from_path
@@ -43,8 +44,10 @@ if __name__ == '__main__':
     
     start_time=time.time()
     obj = DataIngestion()
-    path=Path('D:/END_TO_END_MAJOR/ayush.pdf')
+    
+    path=Path('D:/END_TO_END_MAJOR/IMG20240220101927.pdf')
     img,text = obj.initiate_data_ingestion(path,"Q1 Who is the hod of sharda")
     newimg=DataTransformation().initiate_data_transformation(img)
-    print(len(newimg))
+    a=TextExtractor().initiate_text_extraction(newimg)
+    print(a)
     print(time.time()-start_time,'This is the time')

@@ -21,8 +21,8 @@ def save_images(images, output_dir):
 
 def save_questions(text,path):
     try:
-        with open(path,'w',encoding='utf-8') as f:
+        with open(path,"w",encoding='utf-8') as f:
             f.write(text)
     except Exception as e:
         raise CustomException(e,sys)
-        
+
