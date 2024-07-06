@@ -8,4 +8,7 @@ langchain_core
 Flask
 pandas
 pillow
+
+#pip freeze >requirements_new.txt
+
 #-e .

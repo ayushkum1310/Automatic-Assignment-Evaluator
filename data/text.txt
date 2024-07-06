@@ -1,66 +1,76 @@
-## February 8, 2020
+February - Saturday 
+08
+2020
 
-**Ans 1:** It is the process of extracting graphical data within the platform, a wide range of visualisation and KPI for any visualisation uncover the data better.
+Ans 1: It is the process of extracting graphical data within the platform, 
+a wide range of visualisation and KPI for any application
 
-**Ans 2:** Regression 
-> - Predict continuous outcome
-> - Supervised
-> - Algo - linear reg., Polynomial reg.
-> - eg:- Sales forecasting, stock price
+> Adding pattern uncover
+> Making decision 
+> understanding KPI better
 
-## February 9, 2020
+Ans 2: Regression 
+> Predict continuous outcome
+> Supervised
+> Algo > Linear reg. 
+>              Polynomial reg.
+> eg:- Sales forecasting/ Stock price
 
-**Ex. Ans 3:** Boosting is a technique that classifier from classifier. It is done by using weak model. 
+09 Sunday
+Ex. Ans 3: Boosting is technique that classifier from classifier. It is done using weak model 
 
-**Clustering**
+Clustering 
+- Group similar type of data.
+- Unsupervised 
+- Algo - K means, DBscan
 
-1. Group similar type of data.
-2. Unsupervised
-3. Algo - k-means, DBscan
+> eg: customer segmentation anomaly detection
 
-> - eg: Customer segmentation anomaly detection
+can ensemble modeling attempts to build a strong the number of weak one by building a model by dell in series 
 
-... an ensemble modeling attempts to build a strong .. the number of weak ... one by building a model by ..dels in series.
-
-## February 10, 2020
-
+February
+10
+2020
 Firstly a model is built from training data. Then the second model is build to correct the errors present in the first model.
 
-[Drawing with input, +d, output labels]
+Input ----> (with arrow pointing to "d")     [][][]
+                                                             [][][]
+                                                             [][][]
+                                                              Output
 
-... is updated ..nd step
+"d" is updated in next step
 
-**Ans 4:** Spark helps in data a distributed computing for processing large and efficiently. 
+Ans 4 > Spark helps in data a distributed computing for processing large and efficiently
 
-Speed: Sparks in-memory fast data querying.
+speed > Sparks in memory fast data querying quick
 
-Scalability = Can scale from 1 to thousands of machines to handle datasets of 
+Scalability = Can scale from to thousand of machine to handle datasets of 
 
-Rich API's: Spark provides language ..ula / Java, Python, R) .. exploration by providing frameworks that allow .. volumes of data 
+Rich API's - Spark provides language Scala, Java, Python, R for data exploration by providing frameworks that allow volume of data
 
-.. try processing allows for .. and analyzing ..haling 
+try processing allows for and analysing enabling 
 
-..m a single machine .. me allowing it to .. viktvally any size. 
+on a single machine time allowing it to virtually any size
 
-..ies in multiple ..ula / Java, Python, R) .. explosion.
+API's in multiple Scala, Java, Python, R explosion
 
-## February 11, 2020
+February - Tuesday
+11
+2020
 
-**Ans 5:** 
+Ans 5:
+Multiclass 
+> Single class per instance
+> Classifying image: cats, dogs or birds
+> evaluation matrices: Accuracy, precision recall, F1-score
 
-**Multiclass**
-> - Single class per instance
-> - Classifying images: cats, dogs or birds 
+Multilabel
+> multiple class per instance 
+> tagging a document with multiple topic or categories
+> Hamming loss/precision
 
-> - evaluation metrics: Accuracy, precision, recall, F1-score
-
-**Multilabel**
-> - multiple class per instance
-> - tagging a document with multiple topic or categories
-> - Hamming Loss/precision
-
-**Types of classification**
-> - Binary classification
-> - Multiclass classification
-> - multilabel classification
+Types of classification
+> Binary classification
+> Multiclass classification
+> multilabel classification
 
