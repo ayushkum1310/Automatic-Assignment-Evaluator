@@ -40,14 +40,14 @@ class DataIngestion:
         except Exception as e:
             raise CustomException(e, sys)
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
     
-    start_time=time.time()
-    obj = DataIngestion()
+#     start_time=time.time()
+#     obj = DataIngestion()
     
-    path=Path('D:/END_TO_END_MAJOR/IMG20240220101927.pdf')
-    img,text = obj.initiate_data_ingestion(path,"Q1 Who is the hod of sharda")
-    newimg=DataTransformation().initiate_data_transformation(img)
-    a=TextExtractor().initiate_text_extraction(newimg)
-    print(a)
-    print(time.time()-start_time,'This is the time')
+#     path=Path('D:\END_TO_END_MAJOR\IMG_20240724_221056.pdf')
+#     img,text = obj.initiate_data_ingestion(path,"Q1 Who is the hod of sharda")
+#     newimg=DataTransformation().initiate_data_transformation(img)
+#     a=TextExtractor().initiate_text_extraction(newimg)
+#     print(a)
+#     print(time.time()-start_time,'This is the time')
