@@ -32,7 +32,7 @@ class DataIngestion:
             images = convert_from_path(pdf_path=pdf_file)
             
             #Saving images and question 
-            save_images(images=images, output_dir=self.ingestion_config.images)
+            # save_images(images=images, output_dir=self.ingestion_config.images)
             save_questions(text,self.ingestion_config.Q_text)
             logging.info(f"Sucessfully Converted and save the Image and the question in {self.ingestion_config.images} and {self.ingestion_config.Q_text}")
             return (images,text)

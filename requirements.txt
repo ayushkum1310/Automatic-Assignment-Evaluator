@@ -8,7 +8,10 @@ langchain_core
 Flask
 pandas
 pillow
-
+Levenshtein
+ipykernel
+scikit-learn
+openpyxl
+#-e .
 #pip freeze >requirements_new.txt
 
-#-e .

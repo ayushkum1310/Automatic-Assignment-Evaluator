@@ -23,8 +23,8 @@ def get_requirements(file_path):
 
 setup(
     name="Automatic Assignment Evaluator",
-    version="0.0.1",
-    author="Ayush",
+    version="0.1.0",
+    author="Ayush Kumar",
     author_email="ayushpripl@gmil.com",
     packages=find_packages(),
     install_requires=get_requirements('requirements.txt')    
