@@ -1,18 +1,15 @@
 import os
 import sys
 import time
-
 from src.utils import save_questions
 from src.Logging import logging
 from src.exception import CustomException
-
 from dataclasses import dataclass
 import google.generativeai as genai
 from dotenv import load_dotenv
 from PIL import Image
 from pdf2image import convert_from_path
 from pathlib import Path
-
 load_dotenv()
 
 @dataclass
@@ -22,19 +19,16 @@ class TextExtractorConfig:
 class TextExtractor:
     def __init__(self, file_name: str):
         self.text = TextExtractorConfig(text_path=os.path.join('data', f"{file_name}_text.txt"))
-    
     def initiate_text_extraction(self, combined_images):
         try:
             logging.info("Extraction Has started")
             api = os.getenv("GEMINI_API_KEY")
             genai.configure(api_key=api)
             model = genai.GenerativeModel('gemini-1.5-flash-latest')
-
             # Refined Prompt for Better Accuracy
             prompt = (
                 'you are an profesonal tool which return the handwritten text without manupulation from the image without any data loss or manupulation'
             )
-
             response_text = ""
             for image in combined_images:
                 response = model.generate_content([image, prompt], stream=False)

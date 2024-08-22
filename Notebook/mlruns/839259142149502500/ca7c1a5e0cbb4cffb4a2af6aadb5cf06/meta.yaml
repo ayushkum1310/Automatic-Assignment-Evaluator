@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/839259142149502500/ca7c1a5e0cbb4cffb4a2af6aadb5cf06/artifacts
+end_time: 1724362310088
+entry_point_name: ''
+experiment_id: '839259142149502500'
+lifecycle_stage: active
+run_id: ca7c1a5e0cbb4cffb4a2af6aadb5cf06
+run_name: OCR TIME FOR 3
+run_uuid: ca7c1a5e0cbb4cffb4a2af6aadb5cf06
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724362310015
+status: 3
+tags: []
+user_id: ayush

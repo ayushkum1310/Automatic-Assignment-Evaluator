@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/773461427053881962/8923386d8eac4b2e9bf41f53aad7382a/artifacts
+end_time: 1724364174854
+entry_point_name: ''
+experiment_id: '773461427053881962'
+lifecycle_stage: active
+run_id: 8923386d8eac4b2e9bf41f53aad7382a
+run_name: LLM TIME FOR 3
+run_uuid: 8923386d8eac4b2e9bf41f53aad7382a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724364174756
+status: 3
+tags: []
+user_id: ayush
