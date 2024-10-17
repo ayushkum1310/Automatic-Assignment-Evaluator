@@ -29,10 +29,11 @@ if __name__=="__main__":
         text_extractor_obj=TextExtractor(file_name=file_name)
         text_file_path:list=[]
         extracted_tect_path=text_extractor_obj.initiate_text_extraction(preprocesses_img)
+        text_file_path.append(extracted_tect_path)
         
-        
-        #
+        #Printng The time required for The whole process
         print(time.time()-start_time,'Time taken ')
+        logging.info("The process of text Extraction and Document Making Has been completed")
         logging.info(f'Time taken to Digitize the Document is {time.time()-start_time} Sec')
     except Exception as e:
         raise CustomException(e,sys)
