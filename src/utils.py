@@ -26,3 +26,18 @@ def save_questions(text,path):
     except Exception as e:
         raise CustomException(e,sys)
 
+def read_question(path):
+    try:
+        with open(path, 'r', encoding='utf-8') as file:
+            text = file.read()
+        return text
+    except Exception as e:
+        raise CustomException(sys,e)
+    
+def read_answers(path):
+    try:
+        with open(path, 'r', encoding='utf-8') as file:
+            text = file.read()
+        return text
+    except Exception as e:
+        raise CustomException(sys,e)

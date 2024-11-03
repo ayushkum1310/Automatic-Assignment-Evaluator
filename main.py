@@ -25,7 +25,12 @@ if __name__=="__main__":
             file_name=Path(i).stem
             # Creating Data injestion object and Initiaing the function
             Data_injestion_obj=DataIngestion()
-            img_path,question=Data_injestion_obj.initiate_data_ingestion(pdf_path,"Will data company come for placement in shards")
+            img_path,question=Data_injestion_obj.initiate_data_ingestion(pdf_path,'''Q1. Explain the benefits of ITSM. Define the key perspective of ITSM.
+Q2.Analytically discuss the importance of identity and access management in ensuring security & compliance in cloud Environments.
+Q3.How does ITSM differs when managing services in the cloud compared to traditional on-premises environment?
+Q4.How can organizations ensure compliance and security in cloud services management?
+Q5.Explain Resource allocation and its configuration in Cloud Computing environment?
+''')
             
             # Creating Data Transformation object and Initiaing the function
             preprocessor_obj=DataTransformation()
@@ -48,6 +53,7 @@ if __name__=="__main__":
         Similarity_matrix:SimilarityScore=SimilarityScore()
         path_of_Similarity_scores=Similarity_matrix.initiate_similarity_score(text_file_path)
         logging.info(f"Sucessfully Calcualted the Similarity score of the pdf stored at {path_of_Similarity_scores}")
+        print(question)
         
         
     except Exception as e:
