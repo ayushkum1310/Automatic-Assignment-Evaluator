@@ -52,7 +52,7 @@ class DataTransformation:
             
             
             # Saving imgaes to artifacts
-            save_images(combined_images,self.data_transformation_config.Preprocesser_obj)    
+            # save_images(combined_images,self.data_transformation_config.Preprocesser_obj)    
             
             return combined_images
         except Exception as e:

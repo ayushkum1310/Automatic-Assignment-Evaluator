@@ -24,10 +24,13 @@ class TextExtractor:
             logging.info("Extraction Has started")
             api = os.getenv("GEMINI_API_KEY")
             genai.configure(api_key=api)
-            model = genai.GenerativeModel('gemini-1.5-flash-latest')
+            model = genai.GenerativeModel('gemini-1.5-pro-latest')
             # Refined Prompt for Better Accuracy
+            # prompt = (
+            #     'you are an profesonal tool which return the handwritten text without manupulation from the image without any data loss or manupulation'
+            # )
             prompt = (
-                'you are an profesonal tool which return the handwritten text without manupulation from the image without any data loss or manupulation'
+                'Precisely extract only the handwritten text from this image. Do not interpret, add, rephrase, or omit any content, symbols, punctuation, or formatting. Each character, line, and spacing must match exactly what is visible in the image, with no additional or modified content. Provide an exact digital replication of the handwritten text as it appears in the image.'
             )
             response_text = ""
             for image in combined_images:

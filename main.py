@@ -14,7 +14,7 @@ if __name__=="__main__":
         start_time=time.time()
         
         # Defining path of csv
-        pdf_path=Path('D:\END_TO_END_MAJOR\IMG_20240724_221056.pdf')
+        pdf_path=Path(r'D:\END_TO_END_MAJOR\pdfs\assignment_CTV5.pdf')
         
         file_name=pdf_path.stem
         # Creating Data injestion object and Initiaing the function
