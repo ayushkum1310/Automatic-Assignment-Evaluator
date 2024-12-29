@@ -8,6 +8,7 @@ from src.data_injestion import DataIngestion,DataIngestionConfig
 from src.image_preprocessing import DataTransformation,DataTransformationConfig
 from src.text_extraction import TextExtractor,TextExtractorConfig
 from src.result_compilation import SimilarityScore,Similaritymatrixconfig
+from src.markes_genration import MarkesGenration,MarkesGenrationConfig
 
 if __name__=="__main__":
     try:
@@ -53,7 +54,21 @@ Q5.Explain Resource allocation and its configuration in Cloud Computing environm
         Similarity_matrix:SimilarityScore=SimilarityScore()
         path_of_Similarity_scores=Similarity_matrix.initiate_similarity_score(text_file_path)
         logging.info(f"Sucessfully Calcualted the Similarity score of the pdf stored at {path_of_Similarity_scores}")
-        print(question)
+        logging.info("Started the process of Markes Genration")
+        markes_genration_object=MarkesGenration()
+        try:
+            
+            markes_genration_object.evaluate_answer(question,text_file_path)
+            print(f"Sucessfully genrated markes ")
+            
+        
+        except Exception as e:
+            logging.info("Problem in makes Genration module ")
+            raise CustomException(e,sys)
+            
+            
+            
+        
         
         
     except Exception as e:

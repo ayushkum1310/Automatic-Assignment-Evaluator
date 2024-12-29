@@ -2,8 +2,8 @@ import os
 import sys
 from src.Logging import logging
 from src.exception import CustomException
-from src.image_preprocessing import DataTransformationConfig
-from src.image_preprocessing import DataTransformation
+# from src.image_preprocessing import DataTransformationConfig
+# from src.image_preprocessing import DataTransformation
 from src.text_extraction import TextExtractor,TextExtractorConfig
 from src.utils import save_images,save_questions
 from dataclasses import dataclass

@@ -18,6 +18,7 @@ def save_images(images, output_dir):
         image_path = os.path.join(output_dir, f'image_{i+1}.png')
         # Save the image
         img.save(image_path)
+        
 
 def save_questions(text,path):
     try:

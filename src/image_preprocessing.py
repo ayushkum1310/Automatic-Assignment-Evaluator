@@ -1,12 +1,12 @@
 import os
 import sys
-
+from pathlib import Path
 from  src.Logging import logging
 from src.exception import CustomException
 from src.utils import save_images
 from PIL import Image
 from dataclasses import dataclass
-
+from src.data_injestion import DataIngestion,DataIngestionConfig
 @dataclass
 class DataTransformationConfig:
     Preprocesser_obj=os.path.join("artifacts","preprocessed_images")
@@ -52,9 +52,24 @@ class DataTransformation:
             
             
             # Saving imgaes to artifacts
-            # save_images(combined_images,self.data_transformation_config.Preprocesser_obj)    
+            save_images(combined_images,self.data_transformation_config.Preprocesser_obj)    
             
             return combined_images
         except Exception as e:
             raise CustomException(e,sys)
+        
+if __name__=="__main__":
+    pdf_path=Path("D:\END_TO_END_MAJOR\IMG_20240724_221056.pdf")
+    Data_injestion_obj=DataIngestion()
+    img_path,question=Data_injestion_obj.initiate_data_ingestion(pdf_path,'''Q1. Explain the benefits of ITSM. Define the key perspective of ITSM.
+Q2.Analytically discuss the importance of identity and access management in ensuring security & compliance in cloud Environments.
+Q3.How does ITSM differs when managing services in the cloud compared to traditional on-premises environment?
+Q4.How can organizations ensure compliance and security in cloud services management?
+Q5.Explain Resource allocation and its configuration in Cloud Computing environment?
+''')
+            
+            # Creating Data Transformation object and Initiaing the function
+    preprocessor_obj=DataTransformation()
+    preprocesses_img=preprocessor_obj.initiate_data_transformation(img_path)
+    print(preprocesses_img)
 
