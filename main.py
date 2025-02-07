@@ -59,6 +59,7 @@ Q5.Explain Resource allocation and its configuration in Cloud Computing environm
         try:
             
             markes_genration_object.evaluate_answer(question,text_file_path)
+            logging.info("Sucessfully genrated markes ")
             print(f"Sucessfully genrated markes ")
             
         

@@ -4,6 +4,7 @@ from controller.get_data_controller import Get_data
 from src.exception import CustomException
 from fastapi.middleware.cors import CORSMiddleware
 from routes.get_data import analytics_router as Analytics_Router
+from routes.login import login_router
 import sys
 
 app = FastAPI()
@@ -22,6 +23,7 @@ async def root():
 
 
 app.include_router(Analytics_Router, tags=["Analytics"], prefix="/analytics")
+app.include_router(login_router, tags=["Login"], prefix="/login")
 
 @app.get("/health-check")
 def healthCheck():

@@ -1,0 +1,54 @@
+27
+Unit-1
+Md Naiyar Imam
+CITY
+
+Q.1.
+Ans:- Service Management (ITSM) offer Several
+benefit. Include operational efficiency, streamlined
+workflows, enhanced communication, better
+customer satisfaction and increase overall it governance.
+it enables organisation align its service with
+business need. ensuring a more responsive
+and agile environment ITSM also promote
+proactive problem solving, to
+reduce downtime and improving 
+Service
+and the four attributes of ITSM are follows:-
+1. Partner prespective : To ensure that your
+business partner or a supplier are corporate
+with you.
+2. People Perspective : To service is good
+from people prospective.
+3. Business perspective : To allow your
+co-worker or company staff
+your work.
+4. market perspective : you have to do
+add to improve your service, giving
+people.
+
+25
+In cloud computing your data security is most
+important because multiple user can 
+handle.
+multiple user fixed by third party. In one data base
+store these data. Here there is always change to leak
+your data. Here use to secure your data
+IAM role change multiple encryption, when you need to open your
+data you will goes thorough various authorization, encryption,
+two step verification etc. IAM also give access
+you to give your data, its only up to you,
+or you want to give access. Here you only
+give read only or write an operation on data.
+
+Q.2.
+Ans: ITSM managing service is very differ from
+traditional environment because 
+In premise environment it works on the premise with flows it helps
+organisation align with business need. ITSM 
+also promote proactive problem solving, to
+reduce downtime, these are the improvement
+in ITSM. As compare to 
+other Hand traditional cloud environment its
+efficiency is less efficiency. its
+downtime is more.

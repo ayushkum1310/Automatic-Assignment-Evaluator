@@ -1,0 +1,51 @@
+Name: Bhograjyoti Betera
+2. 2022007628
+1. Explain the Benefits of ITSM. Define the five perspective of ITSM.
+→ ITSM stands for IT service management. It offers several
+benefits, including improved efficiency, streamlined process, &
+enhanced customer satisfaction. It helps the organisation align
+business goals, leading to better service
+delivery, reduced downtime, & overall operational excellence.
+Additionally, ITSM promotes proactive problem resolution, cost
+savings, and a more responsive IT services.
+
+2. Analytically discuss the importance of identity and access management
+in ensuring security & compliance in Cloud Environments.
+→ IAM- Identity & access management, the work of IAM to
+provide the security related solution and problematic overview
+such, it stores the data like who is eligible for to access
+the data that is store in the cloud, and what should be the
+security & leaks which should be 
+their in the cloud and 
+make sure that the person who want to access that
+ptential data, he is eligible or not.
+There are several steps out at which the IAM check the
+person is authorised or not. First it will check that the person
+is register in the data base or not. and then it will check
+that the land where the data is stored that land is public
+private or Hybride, as per that data the IAM allow that person
+to get into the data set and access the required file.
+
+The IAM improve the security level in cloud, it is one of
+the mandatory thing which has to be used by the customer.
+and also cloud. It is the owner who will set the security
+level that who will eligible to access the data. Sometime
+The access is only for the owner and the company.
+Thats why cloud use IAM os their securing purpose.
+which ensure the compatibility of cloud service.
+
+4. How can organizations ensure compliance and security in cloud
+services management?
+→ For the management of compliance and security in cloud
+The companies use ZAM- Identity & access management.
+The work of ZAM is to check every single person who
+want to access the data that stored in the cloud is
+authorised or not
+It is the owner and the company that ensures that
+who is eligible for accessing the documents
+
+ZAM plays a major role in the field of security
+and compliance of any organisation.
+
+5. Explain Resource allocation and its configuration in Cloud Computing
+environment
