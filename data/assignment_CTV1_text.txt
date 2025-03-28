@@ -1,54 +1,55 @@
-27
 Unit-1
 Md Naiyar Imam
-CITY
+CTV
 
-Q.1.
-Ans:- Service Management (ITSM) offer Several
-benefit. Include operational efficiency, streamlined
-workflows, enhanced communication, better
-customer satisfaction and increase overall it governance.
-it enables organisation align its service with
-business need. ensuring a more responsive
-and agile environment ITSM also promote
-proactive problem solving, to
-reduce downtime and improving 
-Service
-and the four attributes of ITSM are follows:-
+Q.1. Ans:- Service Managment (ITSM) offer several 
+benifit. rnclude efficiency, streamlined 
+woshd lowes, enhanced communication, better 
+costomer satisfaction and recitase ovell it governance,
+it enap angemisation aign it service with..
+bisinen need. ensuring 
+a more responsive
+and agile environment,
+Tism also promot 
+puooufive it savice problem solving, greduuring 
+down Line and comperorning savid rexiadity.
+the four otterbates of ITSM are fellows
 1. Partner prespective : To ensure that your
-business partner or a supplier are corporate
-with you.
-2. People Perspective : To service is good
-from people prospective.
-3. Business perspective : To allow your
-co-worker or company staff
-your work.
-4. market perspective : you have to do
-add to improve your service, giving
+bissinen portione. or a Supplier are cont
+coprate with you.
+2.> People perspectiv : To service is good.
+from people prospective..
+company staff
+3. bissiness prospective : To allow your
+Co-worker. or 
+yous allown.
+werk.
+4.> market peruspective : you
+have to add to 
+improve your.. Savice, giving 
 people.
 
-25
-In cloud computing your data security is most
-important because multiple user can 
-handle.
-multiple user fixed by third party. In one data base
-store these data. Here there is always change to leak
-your data. Here use to secure your data
-IAM role change multiple encryption, when you need to open your
-data you will goes thorough various authorization, encryption,
-two step verification etc. IAM also give access
-you to give your data, its only up to you,
-or you want to give access. Here you only
-give read only or write an operation on data.
+2. Ans:- In cloud computing your data scuity is most
+important, belause multiple user 
+handle by third party, in one data base..
+Peter there is always change to leak
+your data, Here tue can store thes data
+ule Secure your data Horougel multiple
+enoription, when you need to even your.
+data you. will goes thorough various 
+Step, authorization, encription, 
+two step vaification ete. Am.. also give 
+you control. wuome to give acces you, 
+your data, tits only up to you, love-
+Bread only give avers, write an operation on dates.
 
-Q.2.
-Ans: ITSM managing service is very differ from
-traditional environment because 
-In premise environment it works on the premise with flows it helps
-organisation align with business need. ITSM 
-also promote proactive problem solving, to
-reduce downtime, these are the improvement
-in ITSM. As compare to 
-other Hand traditional cloud environment its
-efficiency is less efficiency. its
-downtime is more.
+Ans:- ITSM. mamasing sevtoce is very differ from.
+traditional in premise environment. Co because.
+it work on the premise wah flowe it help
+organisation aligon with bos bissthen need: ITSM.
+also promote pusactive problem solving, to
+@reduce. downtione, these are the importuament
+in Tam. As compare to ..
+of other Hand traditional cloud
+environment. its offity. Is en efficiery. its
+downtione is more,
