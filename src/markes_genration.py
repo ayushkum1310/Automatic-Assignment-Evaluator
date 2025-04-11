@@ -61,12 +61,39 @@ class MarkesGenration:
         
         except Exception as e:
             raise CustomException(e, sys)
+    def evaluate_answer_for_single_pdf(self,question:str,answer:str):
+        try:
+            logging.info("Starting answer evaluation.")
+            api = os.getenv("GEMINI_API_KEY")
+            genai.configure(api_key=api)
+            model = genai.GenerativeModel('gemini-1.5-flash-latest')
+            chat_model = model.start_chat()
+            prompt = (
+                "Evaluate the following answer to the question provided. "
+                "If the answer is left blank, consider it as an incomplete response and assign a score of 0 for that particular question. "
+                "Rate the answer only on a scale of 0 to 10 and return just the score in the following JSON format:\n"
+                '```json\n{"score": <int>, "reasoning": "<string>"}\n```\n\n'
+                f"Question: {question}\n\n"
+                f"Answer: {answer}\n"
+                )
 
-if __name__ == "__main__":
-    a = MarkesGenration()
-    questions = read_question(r'D:\END_TO_END_MAJOR\artifacts\Questions.txt')
-    path='data'
-    answers =[os.path.join(path,file) for file in os.listdir(path) if file.endswith('.txt')]
-    a.evaluate_answer(questions, answers)
+            response = chat_model.send_message(prompt)
+            response = chat_model.send_message("I will now send you the answers. Please provide the score based only on the above criteria, with an additional comment not more then 10 words")
+            response=chat_model.send_message(answer)
+            score_text = response.text.strip()
+            return score_text
+        except Exception as e:
+            raise CustomException(e, sys)
+            
+# if __name__ == "__main__":
+#     a = MarkesGenration()
+#     questions = read_question(r'D:\END_TO_END_MAJOR\artifacts\Questions.txt')
+#     path='data'
+#     answers =[os.path.join(path,file) for file in os.listdir(path) if file.endswith('.txt')]
+#     answer=read_answers(answers[0])
+#     print(answer)
+#     print(a.evaluate_answer_for_single_pdf(questions, answer))
+    
+    
     # for i in answers:
     #     print(Path(i).stem)

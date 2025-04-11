@@ -4,6 +4,7 @@ import os
 import sys
 from src.Logging import logging
 from src.exception import CustomException
+import json
 # from src.utils import save_images
 # from dataclasses import dataclass
 # from pdf2image import convert_from_path
@@ -42,3 +43,21 @@ def read_answers(path):
         return text
     except Exception as e:
         raise CustomException(sys,e)
+    
+import json
+from src.exception import CustomException
+
+def refineResponse(response: str):
+    try:
+        response = response.strip().replace("```json", "").replace("```", "").strip()
+          # show hidden characters like \n etc.
+
+        if not response:
+            raise ValueError("Empty response string after cleaning.")
+
+        response = json.loads(response)
+        return response
+    except Exception as e:
+        raise CustomException(e, sys)
+
+

@@ -100,7 +100,7 @@
             formData.append('questions', questions);
 
             try {
-                const response = await fetch('http://localhost:8000/analytics/upload/', {
+                const response = await fetch('/get-text-for-single-pdf/', {
                     method: 'POST',
                     body: formData
                 });

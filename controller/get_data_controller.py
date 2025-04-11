@@ -10,6 +10,7 @@ from src.image_preprocessing import DataTransformation
 from src.text_extraction import TextExtractor
 from src.result_compilation import SimilarityScore
 from src.markes_genration import MarkesGenration
+from src.utils import refineResponse
 
 class Get_data:
     @staticmethod
@@ -44,7 +45,57 @@ class Get_data:
 
             # Mark Generation
             marks_genration_obj = MarkesGenration()  # Ensure proper initialization
-            marks =  marks_genration_obj.evaluate_answer(question, [extracted_text_path])
+            marks =  marks_genration_obj.evaluate_answer_for_single_pdf(question, [extracted_text_path])
+            
+            refined_response = refineResponse(marks)
+            # End processing time
+            end_time = time.time()
+
+            # Prepare response
+            response = {
+                "message": "File processed successfully",
+                "time_taken": end_time - start_time,
+                "marks": refined_response["score"],
+                "resoning":refined_response["reasoning"]
+            }
+
+            # Log processing time
+            logging.info(f"File processed successfully in {end_time - start_time} seconds")
+            
+            # Return a response
+            return JSONResponse(content=response)
+
+        except Exception as e:
+            logging.error("Error processing file", exc_info=True)
+            raise CustomException(e, sys)
+
+    @staticmethod
+    async def get_text_for_single_pdf(file):
+        try:
+            # Save uploaded PDF file
+            upload_dir = "pdfs"
+            os.makedirs(upload_dir, exist_ok=True)
+            pdf_path = os.path.join(upload_dir, file.filename)
+
+            # Writing the uploaded file to disk
+            with open(pdf_path, "wb") as buffer:
+                buffer.write(await file.read())
+
+            # Processing starts
+            start_time = time.time()
+            file_name = Path(file.filename).stem
+
+            # Data Ingestion
+            data_injestion_obj = DataIngestion()
+            img_path, question = data_injestion_obj.initiate_data_ingestion(pdf_path, "NA")
+
+            # Data Transformation
+            preprocessor_obj = DataTransformation()
+            preprocessed_img = preprocessor_obj.initiate_data_transformation(img_path)
+
+            # Text Extraction
+            text_extractor_obj = TextExtractor(file_name=file_name)
+            extracted_text_path = text_extractor_obj.initiate_text_extraction_for_single_pdf(preprocessed_img)
 
             # End processing time
             end_time = time.time()
@@ -53,7 +104,7 @@ class Get_data:
             response = {
                 "message": "File processed successfully",
                 "time_taken": end_time - start_time,
-                "marks": marks
+                "extracted_text": extracted_text_path
             }
 
             # Log processing time
@@ -65,3 +116,6 @@ class Get_data:
         except Exception as e:
             logging.error("Error processing file", exc_info=True)
             raise CustomException(e, sys)
+            
+        
+
