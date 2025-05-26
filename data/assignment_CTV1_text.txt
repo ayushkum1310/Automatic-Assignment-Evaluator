@@ -1,58 +1,33 @@
-Date
-Page No.
-
-Unit-1
-Md Naiyar Imam
-CTV
-
-Q.1.
-Ans:- Service Managment (ITSM) offer several
-benifit. rnclude efficiency, streamlined 
-workflows, enhanced communication, better
+9.1.
+Ans: it
+Service Managment (ITSM) offer several
+benifit. rnclude
+iency, streamlined
+woshd lowes, enhanced communication, better
 costomer satisfaction and recitase ovell it governance,
-it enap angemisation aign it service with
-bisinen need. ensuring a more responsive
-and agile environment.
-ITSM also promot 
+it enap angemisation aign it service with..
+bisinen need. ensuring
+and agile environment,
+a more responsive.
+Tism also promot
 puooufive it savice problem solving, greduuring
-down Line and comperorning savid rexiadity.
-and the four otterbates of ITSM are fellows
-1. Partner prespective : To ensure that your
-bissinen portione. or a Supplier are cont
+on and comperorning savid rexiadity.
+down Line
+and the four otterbates of 17.sm are fellows
+> partner prespective: To ensure that your
+bissinen portione. or. & Supplier are. cont
 coprate with you.
-2.> People perspectiv : To service is good
-from people prospective.
-
-3. bissiness prospective : To allow your
-Co-worker. or company staff
-your work.
-4.> market peruspective : you
-have to add to improve your. Service, giving
-people.
-
-Ans:- ITSM manasing service is very differ from
-traditional in premise environment because
-it work on the premise with flowe it helps
-organisation aligon with business need: ITSM.
-also promote pusactive problem solving to
-reduce downtione, these are the importuament
-in ITSM. As compare to
-other Hand traditional cloud
-environment. its offity is en efficiery. its
-downtione is more,
-
-
-2. Ans:- cloud computing your data scuity is most
-important because
-multiple user handle by third party, in one data base.
-Here there is always change to leak
-your data, Here we can store thes data
-secure your data Horougel multiple
-encription, when you need to even your.
-data you will goes thorough various
-Step, authorization, encription,
-two step vaification etc. Am also give
-you control wuome to give acces to
-your data, tits only up to you, have
-you only give read only
-or write an operation on data.
+2.> people perspectiv: To service is good.
+from people prospective..
+company staff
+⑥ bissiness prospective: To allow
+yous
+Co-worker: or.
+werk.
+A market perusperlere & you
+your allown.
+are good at
+have to do
+add to
+improve your.. Savice, giving
+people,

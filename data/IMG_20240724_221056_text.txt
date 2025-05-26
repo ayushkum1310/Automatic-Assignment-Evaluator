@@ -1,0 +1,357 @@
+Count A:
+counts
+the number of non- blank values in a
+column; regardless of data type
+count the non- blank values in a column
+regardless of non- numerical
+
+Syntax: COUNTA [column>]
+
+COUNTX:
+is used to count the number of rows in a table
+where an expression evaluates to a non-blank
+value
+useful when you need to apply some calculation
+or condition before counting the rows.
+
+Syntax: COUNTX (<table>, <expression>]
+
+COUNTBLANK
+is used to count the number of blank (or missing)
+values in a column. useful for data quality checks and identifying
+missing data within your dataset.
+
+Syntax : COUNTBLANK [column>]
+
+DISTINCTCOUNT
+used to count the number of unique non- blank
+values in a column. useful for scenarios where
+the number of unique items such as
+
+unique customers, products or any other unique
+entries in a dataset.
+
+Syntax : DISTINCT COUNT [<column>]
+
+MAX:
+returns the largest numerical value in a column
+syntax: MAX [<column>]
+
+MAXA:
+returns the largest value in a column, but it can
+handle both numerical and non-numeric data
+types including text, logical values and blanks.
+
+Syntax : MAXA [<column>]
+
+MAXX:
+evaluates an expression for each row of a table and
+returns the largest numerical value. useful when you
+need to apply a calculation to each row before finding
+the maximum value.
+
+Syntax : MAXX [<table>, <expression>]
+
+E.g. A sales table with columns Quantity, Price and Discount
+find maximum revenue after discount.
+Max Revenue = MAXX [ sales, sales [ Quantity] * Sales [Price] *
+[1- sales [Discount]]]
+
+AVERAGE:
+returns the arithmetic mean (average) of the
+the numeric values in a column.
+
+Syntax : AVERAGE [<column>]
+
+AVERAGEA:
+returns the arithmetic mean of the values in
+a column, treating TRUE as 1, FALSE as 0
+and ignoring text except for BLANKS
+
+Syntax : AVERAGEA [<column>]
+
+AVERAGEX:
+calculates the average of an expression evaluated
+for each row of a table.
+
+Syntax : AVERAGEX [<table>, <expression>]
+
+COUNTROWS
+returns the count of number of rows in a table
+
+syntax: 'COUNTROWS (<table>])
+Date and Time Functions-
+are essential for manipulating and analysing dates and
+time data, performing calculations based on dates,
+and creating meaningful insights in POWER BI
+CALENDAR :
+generates a date table from a specified start date to a
+specified end dates!
+Control: free control over the exact range of dates by
+specifying the start and end dates!
+Flexibility : Less flexible since you need to manually
+set the start and end dates.
+Fiscal Year support Does not have built in support
+for fiscal year-end specification.
+syntax: CALENDAR[<start_datis>, <end-dati>]
+
+Example: CALENDAR [DATE (2024, 1,1], DATE (2024, 12/31]]
+Scenario: Used to creati a custom date table, which is
+essential for time- based calculations and
+analysis.
+
+CALENDAR AUTO:
+automatically generates a date table based on the
+minimum and maximum dates in the model.
+Control: Less control as it adapts to the
+data in the model
+Flexibility: More Flexible because it automatically
+adjust to the date range present in the
+data model.
+
+Fiscal Year support : Allows specifying a fiscal year-
+end month, which adjust the date
+Can quickly generate a date table without specifying
+dates manually
+
+syntax: CALENDAR AUTO [<fiscal-year-end-month>]
+
+Example: CALENDAR AUTO[6]
+// Adjusts for fiscal year ending in June
+scenario : Useful when the date range is not known
+in advance or when you want the date table
+to dynamically adapt to the data model.
+
+DATE:
+returns the specified date in datetime format
+Used to create a date from individual year, month
+and day components.
+
+Syntax: DATE ( <year>, <month>, <day>]
+
+Example: DATE [2024, 6, 30]
+
+DATEDIFF :
+returns the number of interval boundaries between
+two dates.
+Useful for calculating the difference between two
+dates in terms of days, months, years etc.
+
+Syntax: DATEDIFF [cstart_dati>, <end_dati>, <intervals>]
+Example: DATEDIFF [Order Date, Delivery Date,
+DAY]
+
+DATEVALUE:
+Converts a date in the form of text to a date in
+datetime format.
+To convert date strings to datetime values for
+further calculations.
+
+Syntax: DATEVALUE [<date-text>]
+Use case: Convert a date string from a csv import to a
+datetime value.
+
+Example: DATEVALUE ["2024-06-30"]
+
+DAY:
+returns the day of the month, a number from 1 to 31
+Extracts the day component from a date
+
+Syntax: DAY [<date>]
+• Extracting the day part of a transaction
+Example: DAY [Transaction Date]
+MONTH:
+Returns the month as a number from 1 [January] to
+12 [ December ]
+Extracts the month component from a dati
+syntax: MONTH [<date>]
+Extracting the month part of a sales date
+Example: MONTH [Sales (Sale Dat)]]
+
+YEAR:
+returs the year of a dati as a four- diget integer
+in the range 1900-9999.
+Syntax: YEAR [<datis>]
+Extracting the year part of a hire 'dati.
+Example: YEAR [Employee (Hire Date)]
+
+QUARTER!
+Returns the quarter as a number from 1 to 4
+Syntax: QUARTER [<date>]
+Determining the quarter in which a sale was made
+Example: QUARTER [ Sales [Sale Dauty]]
+
+HOUR:
+Return the hour as a number from 0 [12:00AM] to 23
+C11:00PM]
+Used to extract the hour component from a time
+valve, which can be weful in time-based
+analysis.
+Syntax: HOUR [< datetime>]
+Use Case: Analysing the distribuction of transactions across
+different hours of the day
+Example: HOUR [Transaction [Transaction Time]]
+(If transaction time is "14:35:20", this retuns 14)
+
+MINUTE:
+Return the minute as a number from 0 to 59
+Used to extract the minute component from a time
+valve for detailed time analysis
+Syntax: MINUTE [<datetime>]
+Use Case: Determining the minute part of a timestamp for
+detailed logging or monitoring purposes.
+Example: MINUTE [Transaction [traction Time]]
+(If transaction time is "14:35:20", this return 35)
+
+SECOND:
+Returns the seconds of a time value as a number
+from 0 to 59.
+Used to extract the seconds component from a time
+value useful in brecise-time-based analysis.
+cyntax: SECOND [cdate time]
+Extracting the second part of a timestamp
+for
+high precesion logging.
+Examper: SECOND [Transaction (Transaction Time]]
+(If transaction time is "14:35:20", this returns 20)
+
+TODAY:
+description: returns the current date.
+Useful for calculations that require the current
+date such as aging analysis on at daily reports.
+Syntax: TODAY[]
+Use Case: Calulating the number of days since a specific
+event.
+Examper: TODAY[]
+elf today is June 24, 2024, this retions 2024-06-29)
+
+NOW:
+Returns the current date and time
+used for calculations that requious bath the current
+date and sime, such as real-time monitoring
+sund updates.
+Syntax: NOW[]
+
+Use Case: Determining the exact timestamp of the latest
+data refresh
+
+TIME:
+
+Converts hours, minutes and seconds given as numbers
+to a time in datetime format.
+Useful for constructing time values from separate
+hour, minute and second components.
+
+Syntax: TIME [<hour>, <minute>, <seconds>]
+
+Use Case: Creating a time value for a specific event
+
+Example: TIME [14,35,20]
+
+TIMEVALUE:
+
+Converts a time in text format to a time in a datetime
+format
+Useful for converting time strings from data imports into
+datetime format for analysis
+
+Syntax: TIMEVALUE [<time value>]
+
+Use case: converting a time string from a csv import to a
+datetime value.
+
+Example: TIMEVALUE ["14:35:20"]
+//Returns 14:35:20
+
+WEEKDAY
+
+returns the day of the week for a given date
+value. It can return a number from 1 to 7,
+where the number corresponds to a specific
+day of week
+
+Syntax: WEEKDAY (<date>, <return-type>)
+
+Example: WEEKDAY (Cordens [Order Date],1)
+(return a number from 1(sunday) to 7
+(saturday)
+for each date)
+WEEKNUM
+
+returns the weeknumber for a given date value.
+This function helps find which week of the year
+a particular date falls into.
+
+Syntax: WEEKNUM (<date>, <return-type>)
+
+Example: WEEKNUM (Orders [Order Date],1)
+(Returns the week number for each date, assuming
+weeks stood on sunday)
+
+NETWORKDAYS
+
+return the number of whole workdays between two dates,
+excluding weekends and holidays.
+This is useful for calculating busiens days between
+two dates
+
+Syntax: NETWORKDAYS (<start_date>, <end_date>, <weekend>,
+<holidays>])
+
+start date: start date
+end date: end date
+weekend (optional): Indicates which day are considered
+weekends. Default is 1 (saturday, sunday)
+Holidays (optional): A column of dates to be excluded
+from the working days
+
+Example -
+NETWORKDAYS ('Order'[Order Date], 'Order' [Delivery Date],
+1, Holiday)
+
+CALENDAR
+
+generates a date table from
+a specified start day to a
+specified end date now.
+
+you have control over the exact
+range of dates.
+
+Does not have built-in support
+for fiscal year and
+specification
+
+CALENDARAUTO
+
+Automatically determines the
+start and end dates based
+on the data in the model.
+More flexible as it adapts
+to the date range in the
+data model.
+Allows specifying a fiscal
+year end month, which
+adjusts the date range
+accordingly.
+DAX
+Aggregation Function -
+are essential for summarizing data, performing
+mathematical operations and creating meaningful
+insights in POWER BI.
+SUM
+used to calculate the total sum of a single column
+It adds up all the values in the specified
+column
+Syntax : SUM [<column>]
+SUMX
+It is more flexible and powerful.
+It is an iterator function, meaning it generates
+over a table, evaluates an expression for each
+and then returns the sum of the results.
+Syntax : SUMX [ <table>, <expression>]
+count
+is to count the non-blank numerical values in a
+column and excludes the blank and Null values
+in a column.
+Syntax : Count [<column>]

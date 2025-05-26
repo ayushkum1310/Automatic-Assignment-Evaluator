@@ -25,7 +25,7 @@ class TextExtractor:
             logging.info("Extraction Has started")
             api = os.getenv("GEMINI_API_KEY")
             genai.configure(api_key=api)
-            model = genai.GenerativeModel('gemini-1.5-pro-latest')
+            model = genai.GenerativeModel('gemini-2.0-flash-lite')
             # Refined Prompt for Better Accuracy
             # prompt = (
             #     'you are an profesonal tool which return the handwritten text without manupulation from the image without any data loss or manupulation'
